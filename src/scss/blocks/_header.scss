@@ -1,0 +1,101 @@
+.header {
+  padding: 19px 0 41px;
+  background: url("../../img/header-bg.jpg") no-repeat center center/cover;
+  color: $white-color;
+  text-align: center;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 179px;
+  }
+
+  &__logo {
+    display: block;
+    width: 80px;
+    height: 104px;
+  }
+
+  &__contacts {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: right;
+  }
+
+  &__contacts-tel {
+    display: block;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $white-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__main-title {
+    font-size: 60px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 45px;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+    font-weight: 500;
+  }
+
+  &__promo {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 99px;
+  }
+
+  &__btn {
+    margin-bottom: 140px;
+    transition: .4s all;
+
+    &:hover {
+      border-color: $light-khaki;
+      color: $light-khaki;
+      background-color: rgba(255, 255, 255, 0.15);
+      font-size: 18px;
+    }
+  }
+
+}
+
+@media (max-width: 990px) {
+  .header {
+    padding-right: 20px;
+    padding-left: 20px;
+
+    &__main-title {
+      font-size: 50px;
+    }
+  }
+}
+@media (max-width: 767px) {
+
+  .header {
+    &__contacts{
+      font-size: 12px;
+    }
+    &__main-title {
+      font-size: 40px;
+    }
+    &__btn{
+      min-width: 250px;
+      &:hover{
+        border-color: $white-color;
+        color: $white-color;
+        background-color: transparent;
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.social-block {
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid $white-color;
+    margin: 0 5px;
+    transition: .5s background-color;
+    &:hover{
+      background-color: rgba(255,255,255,0.15);
+      @media (max-width: 767px) {
+        background-color: transparent;
+      }
+    }
+    img {
+      height: 15px;
+    }
+  }
+}

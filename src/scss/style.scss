@@ -1,0 +1,33 @@
+@import "libs/normalize";
+@import "libs/fonts";
+
+@import "base/variables";
+
+* {
+  box-sizing: border-box;
+  font-family: 'Muller', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+@import "blocks/_header";
+@import "blocks/btn";
+@import "blocks/social-block";
+@import "blocks/promo";
+@import "blocks/reasons";
+@import "blocks/slider";
+@import "blocks/schedule";
+@import "blocks/program";
+
+

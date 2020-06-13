@@ -1,0 +1,123 @@
+.program {
+  padding-bottom: 80px;
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__info {
+    padding: 0 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 63px;
+
+    p {
+      margin: 0 0 20px;
+    }
+  }
+
+  &__list-title {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto 60px;
+  }
+  &__list{
+    margin-bottom: 72px;
+  }
+  &__list-item {
+    display: flex;
+    width: 70%;
+    margin: 0 auto 30px;
+  }
+  &__list-img{
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin-right: 38px;
+    border-radius: 50%;
+  }
+  &__list-text{
+    padding-top: 35px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+.program-center{
+  position: relative;
+  display: flex;
+  padding: 0 30px;
+  &:before{
+    position: absolute;
+    top: -25px;
+    left: -5px;
+    display: block;
+    content: '';
+    width: 720px;
+    height: 260px;
+    background-color: $light-khaki;
+    z-index: -1;
+  }
+  &__images{
+    width: 55%;
+    margin-left: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  &__img{
+    width: 139px;
+    height: 139px;
+    margin: 10px;
+    &:nth-child(3n){
+      margin-right: 0;
+    }
+  }
+  &__content{
+    margin-left: 20px;
+    padding-top: 55px;
+    width: 45%;
+    margin-right: -5%;
+  }
+  &__title{
+    margin: 0 auto 9px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: left;
+  }
+  &__subtitle{
+    font-size: 14px;
+    font-weight: 400;
+    color: #4a4a4a;
+    margin-bottom: 35px;
+  }
+  &__text{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    p{
+      margin: 0 0 15px;
+    }
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  &__list-left, &__list-right{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    font-size: 12px;
+    font-weight: 100;
+    text-align: left;
+    color: #434343;
+  }
+  &__list-item{
+    padding-left: 28px;
+    margin-bottom: 10px;
+    line-height: 13px;
+    background: url("../../img/logo-8.png") no-repeat 3px top;
+  }
+}

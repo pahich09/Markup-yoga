@@ -19,16 +19,17 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    max-height: 550px;
   }
 
   &__item {
     position: relative;
     width: 400px;
-    height: 380px;
     cursor: pointer;
 
 
     img {
+      vertical-align: middle;
       width: 100%;
       height: 100%;
     }
@@ -56,7 +57,6 @@
       position: relative;
       width: 60%;
       margin: 0 30px;
-      height: 580px;
       text-align: center;
       color: $white-color;
       cursor: default;
@@ -87,7 +87,7 @@
   }
 
   &__item-title {
-    margin: 209px auto 24px;
+    margin: 20% auto 24px;
     font-size: 26px;
     text-transform: uppercase;
     max-width: 80%;
@@ -105,8 +105,11 @@
 
 @media (max-width: 990px) {
   .slider {
+    &__picture {
+      max-height: 400px;
+    }
+
     &__item {
-      height: 350px;
 
       &_left {
         margin-left: -180px;
@@ -117,7 +120,6 @@
       }
 
       &_active {
-        height: 400px;
         width: 70%;
 
         &:before {
@@ -130,7 +132,6 @@
     }
 
     &__item-title {
-      margin: 90px auto 24px;
       font-size: 22px;
     }
 
@@ -148,9 +149,12 @@
       margin-bottom: 30px;
     }
 
+    &__picture {
+      max-height: 250px;
+    }
+
     &__item {
       width: 200px;
-      height: 180px;
 
       &_left {
         margin-left: -120px;
@@ -162,7 +166,6 @@
 
       &_active {
         width: 70%;
-        height: 250px;
         margin: 0 15px;
 
         &:before {
@@ -175,14 +178,20 @@
     }
 
     &__item-title {
-      text-align: center;
-      margin: 40px auto 15px auto;
       font-size: 16px;
       max-width: 100%;
     }
 
     &__item-text {
       font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 424px) {
+  .slider{
+    &__item-text {
+      display: none;
     }
   }
 }

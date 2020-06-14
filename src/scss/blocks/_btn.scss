@@ -22,4 +22,8 @@
       background-color:  #fd8329;
     }
   }
+  &_cost{
+    @extend .btn_schedule;
+    min-width: 140px;
+  }
 }

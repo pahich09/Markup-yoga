@@ -14,4 +14,10 @@ $(document).ready(function () {
       changeSlide('slider__item_right');
     }
   });
+
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    margin: 50,
+    loop: true,
+  });
 });

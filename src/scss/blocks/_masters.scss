@@ -1,0 +1,145 @@
+.masters {
+  padding: 60px 30px 80px;
+
+  background-color: $light-khaki;
+
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__slider {
+    max-height: 540px;
+  }
+
+  &__slider-item {
+    position: relative;
+  }
+
+  &__info {
+    position: absolute;
+    display: flex;
+    padding: 40px 60px;
+    background-color: rgba(66, 66, 66, .5);
+    color: $white-color;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__info-left {
+    width: 40%;
+    padding-right: 20px;
+    border-right: 2px solid $white-color;
+  }
+
+  &__info-right {
+    width: 60%;
+    padding-left: 45px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  &__name {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  &__location {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .owl-dots {
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    bottom: 10px;
+    height: 15px;
+    width: 50px;
+
+    .owl-dot {
+      display: inline-flex;
+      vertical-align: top;
+      justify-content: center;
+      align-items: center;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      margin-left: 7px;
+      border: 1px solid rgba(255, 255, 255, .5);
+    }
+
+    .active {
+      border-color: $white-color;
+
+      &:before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: $white-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .masters {
+    padding: 40px 20px 40px;
+    &__title{
+      margin-bottom: 30px;
+    }
+    &__info {
+      padding: 20px 20px 30px;
+    }
+
+    &__info-left {
+      width: 30%;
+      padding-right: 15px;
+    }
+
+    &__info-right {
+      width: 70%;
+      padding-left: 10px;
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+    &__name {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    &__location {
+      font-size: 12px;
+    }
+  }
+}
+@media (max-width: 576px){
+  .masters {
+    &__info {
+      padding: 10px 10px 20px;
+    }
+    &__info-left {
+      width: 100%;
+      border: none;
+    }
+
+    &__info-right {
+      display: none;
+    }
+
+    &__name {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    &__location {
+      font-size: 10px;
+    }
+  }
+}
+

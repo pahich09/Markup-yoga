@@ -27,7 +27,7 @@ const path = {
   src: {
     html: [source_folder + '/*.html'],
     css: source_folder + '/scss/style.scss',
-    js: source_folder + '/js/script.js',
+    js: source_folder + '/js/*.js',
     img: source_folder + '/img/*',
     font: source_folder + '/fonts/*',
   },
@@ -51,6 +51,10 @@ function server() {
   });
 }
 
+function libs() {
+  return src('src/scss/libs/*.css')
+    .pipe(dest('dist/libs/'));
+}
 
 function html() {
   return src(path.src.html)
@@ -136,7 +140,7 @@ const watchFiles = () => {
   watch([path.watch.img], images);
 };
 
-const build = series(clean, parallel(css, html, font, js, images));
+const build = series(clean, parallel(css, html, font, js, images, libs));
 const dev = parallel(build, watchFiles, server);
 
 exports.build = build;

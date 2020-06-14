@@ -15,9 +15,18 @@ $(document).ready(function () {
     }
   });
 
-  $(".owl-carousel").owlCarousel({
+  $(".masters .owl-carousel").owlCarousel({
     items: 1,
-    margin: 50,
     loop: true,
+    smartSpeed: 800,
+  });
+
+  $(".reviews .owl-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    nav: true,
+    smartSpeed: 1000,
+    autoplay: true,
+    autoplayHoverPause: true
   });
 });

@@ -1,5 +1,5 @@
 .masters {
-  padding: 60px 30px 80px;
+  padding: 60px 30px 10px;
 
   background-color: $light-khaki;
 
@@ -74,6 +74,7 @@
 
     .active {
       border-color: $white-color;
+      outline: none;
 
       &:before {
         content: "";
@@ -88,7 +89,7 @@
 
 @media (max-width: 767px) {
   .masters {
-    padding: 40px 20px 40px;
+    padding: 40px 20px 20px;
     &__title{
       margin-bottom: 30px;
     }

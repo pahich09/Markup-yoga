@@ -1,67 +1,81 @@
-.schedule{
+.schedule {
   padding-bottom: 80px;
-  &__title{
+
+  &__title {
     margin-bottom: 60px;
   }
-  &__list{
+
+  &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 -10px;
   }
-  &__item{
+
+  &__item {
     width: 220px;
     background-color: #fff8e6;
     margin: 10px;
     padding: 30px 20px 20px;
     text-align: center;
   }
-  &__item-date{
+
+  &__item-date {
     font-size: 14px;
     color: #4a4a4a;
     font-weight: 300;
     margin-bottom: 13px;
   }
-  &__item-title{
+
+  &__item-title {
     margin: 0 auto 19px;
     font-size: 18px;
     font-weight: 500;
 
   }
-  &__item-more{
+
+  &__item-more {
     display: block;
     font-size: 12px;
     text-align: center;
     color: #5b55b3;
     margin-bottom: 18px;
   }
-  &__item-btn{
+
+  &__item-btn {
     min-width: auto;
   }
 }
 
 @media (max-width: 1020px) {
-  .schedule{
+  .schedule {
     padding: 0 30px 80px;
   }
 }
 
 @media (max-width: 767px) {
-  .schedule{
+  .schedule {
     padding: 0 20px 40px;
-    &__title{
+
+    &__title {
       margin-bottom: 35px;
     }
-    &__item{
+
+    &__item {
       width: 45%;
     }
   }
 }
 
-@media (max-width: 576px){
-  .schedule{
-    padding: 0 0px 40px;
-    &__item{
+@media (max-width: 576px) {
+  .schedule {
+    padding: 0 0 40px;
+
+    &__list {
+      margin: 0;
+    }
+
+    &__item {
       width: 80%;
       max-width: 360px;
     }

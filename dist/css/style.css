@@ -2255,7 +2255,11 @@ body {
 
 @media (max-width: 576px) {
   .schedule {
-    padding: 0 0px 40px;
+    padding: 0 0 40px;
+  }
+
+  .schedule__list {
+    margin: 0;
   }
 
   .schedule__item {

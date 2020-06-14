@@ -1,0 +1,122 @@
+.footer {
+  padding: 50px 30px;
+  background-color: $light-khaki;
+  font-size: 16px;
+
+  &__wrap {
+    width: 65%;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    > div:first-child {
+      font-size: 22px;
+      margin-bottom: 25px;
+      width: 100%;
+    }
+  }
+
+  &__social {
+    width: 50%;
+  }
+
+  &__tel {
+    width: 50%;
+    line-height: 1.5;
+
+    span {
+      font-size: 12px;
+      font-style: italic;
+    }
+  }
+
+  &__tel-number {
+    @extend .header__contacts-tel;
+    color: $dark-color;
+    padding-top: 0;
+  }
+
+  &__social-links {
+    justify-content: flex-start;
+    margin-top: 18px;
+  }
+
+  &__offices-wrap {
+    display: flex;
+    margin: 15px -5px 0;
+  }
+
+  &__offices-item {
+    margin: 0 5px;
+    font-size: 11px;
+  }
+
+  &__offices-map {
+    margin-bottom: 10px;
+    min-height: 80px;
+  }
+}
+
+@media (max-width: 990px) {
+  .footer {
+    &__wrap {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 30px 20px;
+    font-size: 12px;
+    text-align: center;
+
+    &__contacts {
+      margin-bottom: 15px;
+      text-align: center;
+
+      > div:first-child {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+    }
+
+    &__social {
+      width: 100%;
+    }
+
+    &__tel {
+      width: 100%;
+
+      span {
+        font-size: 10px;
+      }
+    }
+
+    &__social-links {
+      margin: 5px 0 15px;
+      justify-content: center;
+    }
+
+    &__offices-wrap {
+      margin: 10px 0 0;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__offices-item {
+      margin-bottom: 10px;
+      font-size: 11px;
+    }
+
+    &__offices-map {
+      display: block;
+      margin-bottom: 10px;
+      min-height: 80px;
+    }
+  }
+}

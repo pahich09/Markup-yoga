@@ -22,4 +22,13 @@
       height: 15px;
     }
   }
+  &_footer{
+    a{
+      background-color: #fd8329;
+      &:hover{
+        background-color: #fd8329;
+        opacity: 0.5;
+      }
+    }
+  }
 }
